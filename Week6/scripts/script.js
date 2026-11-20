@@ -46,16 +46,28 @@ function createStar() {
 
 }
 
-var starCount = 50;
+// var starCount = 50;
+// var stars = []; //creates an array
+// for (var i = 0; i < starCount; i++) {
+//     stars[i] = createStar();
+//     stars[i].x = Math.random() * canvas.width;
+//     stars[i].y = Math.random() * canvas.height;
+//     stars[i].radius = Math.random() * 5;
+//     // stars[i].color = `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`
+//     stars[i].color = "white";
+// }
+
+var starCount = 2;
 var stars = []; //creates an array
 for (var i = 0; i < starCount; i++) {
     stars[i] = createStar();
-    stars[i].x = Math.random() * canvas.width;
-    stars[i].y = Math.random() * canvas.height;
-    stars[i].radius = Math.random() * 5;
+    stars[i].x =  canvas.width;
+    stars[i].y =  canvas.height;
+    stars[i].radius =  5;
     // stars[i].color = `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`
     stars[i].color = "white";
 }
+
 
 shipSprite.x = canvas.width / 2;
 shipSprite.y = canvas.height / 2 + 100;
